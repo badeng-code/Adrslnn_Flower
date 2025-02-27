@@ -1,0 +1,772 @@
+/*untuk button scroll*/
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #FF71CD;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+    transition: 0.5s;
+  }
+  
+  #myBtn:hover {
+    background-color: #fce4ec;
+  }
+  /*end button scroll*/
+
+  /*untuk home*/
+  .main-home {
+    background-image: url("gambar/back5.jpeg");
+    background-size: cover;
+    padding-top: 5%;
+    padding-bottom: 12%;
+  
+    color: #fff;
+    background-repeat: no-repeat;
+    background-position: center center;
+  
+    background-attachment: fixed;
+    min-height: 100%;
+  }
+  
+  .main-home button:hover {
+    background-color: #FFBDEB;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  .main-home button {
+    background-color: #fff;
+    color: #fff;
+    text-decoration: none;
+  }
+  .main-home button a {
+    text-decoration: none;
+  }
+  
+  /* untuk header */
+  .main-nav {
+    background-color: #FFBDEB;
+    height: 80px; /* Atur tinggi navbar */
+    line-height: 80px; /* Sejajarkan teks secara vertikal */
+  }
+  .main-nav .navbar-nav a.nav-link {
+    color: #fff;
+    font-weight: 600;
+  }
+  .main-nav .navbar-nav .nav-link.active,
+  .main-nav .navbar-nav .nav-link:hover {
+    color: #000;
+  }
+  
+  .navbar.scrolled {
+    background-color: #FFBDEB;
+    transition: background-color 0.5s ease;
+    box-shadow: 0px -10px 30px #666;
+  }
+  .navbar.scrolled a.nav-link {
+    color: #000;
+  }
+  .navbar img.main-logo {
+    width: 150px;
+  }
+  .navbar img.main-logo-hitam {
+    display: none;
+  }
+  .navbar.scrolled img.main-logo-hitam {
+    display: inline-block;
+  }
+  .navbar.scrolled img.main-logo-putih {
+    display: none;
+  }
+  
+  .nav-link {
+    position: relative;
+  }
+  
+  .nav-link::after {
+    content: "";
+    transition: 0.5s linear;
+    opacity: 0;
+    height: 0;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: transparent;
+    position: absolute;
+  }
+  
+  .nav-link:hover::after {
+    opacity: 1;
+  }
+  
+  /* end header */
+  
+  /*about us*/
+  
+  /*garis bawah*/
+  h2.main-judul::after {
+    margin: auto;
+    margin-top: 20px;
+    display: block;
+    border-bottom: 10px solid #ff66cc;
+    width: 100px;
+    border-radius: 25px;
+    content: "";
+    
+  }
+  .main-judul::after {
+    margin: auto;
+    margin-top: 20px;
+    display: block;
+    border-bottom: 10px solid #ff66cc;
+    width: 100px;
+    border-radius: 25px;
+    content: "";
+  }
+  /*end garis bawah*/
+  
+  .main-about {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    padding-bottom: 5%;
+    
+  }
+  
+  
+  .parallax {
+    /* The image used */
+    background-image: url("gambar/back_about.jpeg");
+  
+    /* Set a specific height */
+    min-height: 500px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  /*Gallary*/
+  
+  .image {
+    position: relative;
+  }
+  
+  .image img {
+    border-radius: 20px;
+  }
+  
+  .image__img {
+    display: block;
+    width: 100%;
+  }
+  
+  .image__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    font-family: "Quicksand", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+    border-radius: 20px;
+  }
+  
+  .image__overlay--blur {
+    backdrop-filter: blur(5px);
+  }
+  
+  .image__overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+  }
+  
+  .image__overlay:hover {
+    opacity: 1;
+  }
+  
+  .image__overlay:hover > * {
+    transform: translateY(0);
+  }
+  
+  .image__title {
+    font-size: 2em;
+    font-weight: bold;
+    color: #ffc300;
+  }
+  
+  .image__description {
+    font-size: 1em;
+    margin-top: 0.25em;
+    padding: 0 50px 0px;
+  }
+  
+  .main-carausel1 {
+    margin-top: 100px;
+  }
+  
+  /*end about us*/
+  
+  
+  
+  
+  /*our product*/
+  .main-blog-info img {
+    width: 80px;
+    float: left;
+  }
+  .main-blog-info {
+    color: #666;
+    position: relative;
+  }
+  .main-blog-info a {
+    padding-right: 15px;
+    color: #666;
+    text-decoration: none;
+  }
+  .main-blog-info a:hover {
+    color: #ffc300;
+  }
+  #blog .main-blog-info span {
+    font-size: 10px;
+    padding-left: 15px;
+  }
+  #blog a {
+    text-decoration: none;
+    color: #666;
+  }
+  
+  #blog-detail a:hover {
+    color: #FFBDEB;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #blog-detail .main-blog-info img {
+    float: none;
+    cursor: default;
+  }
+  #blog-detail .main-blog-info span:before {
+    content: "";
+    top: 0px;
+    margin-bottom: 3px;
+    display: inline-block;
+    margin-right: 15px;
+    background-color: #ccc;
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    cursor: default;
+  }
+  
+  /*modal*/
+  .modal-position {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Background transparan gelap */
+    backdrop-filter: blur(8px); /* Efek blur */
+    z-index: 9999; /* Pastikan modal selalu di atas */
+    display: none; /* Default tersembunyi */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  /*--------------------------------------------*/
+  
+  .img-hover-zoom {
+    overflow: hidden;
+  }
+  .img-hover-zoom img {
+    transition: transform 0.5s ease;
+    object-fit: cover;
+    object-position: center;
+    
+  }
+  
+  .img-hover-zoom:hover img {
+    transform: scale(1.2);
+    
+  }
+  
+  .main-product {
+    position: relative;
+  }
+  
+  .keyboard-detail-button {
+    font-size: 35px;
+    position: absolute;
+    bottom: 0;
+    left: 90%;
+    transform: translate3d(-50%, 0, 100px);
+    opacity: 0;
+    transition: 0.5s;
+    text-shadow: 0 0 6px #000;
+    cursor: pointer;
+  }
+  
+  .main-product:hover .keyboard-detail-button {
+    opacity: 1;
+    bottom: 10px;
+  
+  }
+  
+  .main-product a i:hover {
+    color: #FF71CD;
+  }
+  
+  
+  
+  /*end our product*/
+  
+  /* FAQ */
+  
+  .accordion-style .card {
+    background: transparent;
+    box-shadow: none;
+    margin-bottom: 15px;
+    margin-top: 0 !important;
+    border: none;
+  }
+  .accordion-style .card:last-child {
+    margin-bottom: 0;
+  }
+  .accordion-style .card-header {
+    border: 0;
+    background: none;
+    padding: 0;
+    border-bottom: none;
+  }
+  .accordion-style .btn-link {
+    color: #ffffff;
+    position: relative;
+    background: #FFBDEB;
+    border: 1px solid #FFBDEB;
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    border-radius: 3px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    text-align: left;
+    white-space: normal;
+    box-shadow: none;
+    padding: 15px 55px;
+    text-decoration: none;
+  }
+  .accordion-style .btn-link:hover {
+    text-decoration: none;
+  }
+  .accordion-style .btn-link.collapsed {
+    background: #ffffff;
+    border: 1px solid #FFBDEB;
+    color: #000;
+    border-radius: 3px;
+  }
+  .accordion-style .btn-link.collapsed:after {
+    background: none;
+    border-radius: 3px;
+    content: "+";
+    left: 16px;
+    right: inherit;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 26px;
+    height: 26px;
+    transform: none;
+    width: 26px;
+    top: 15px;
+    text-align: center;
+    background-color: #FFBDEB;
+    color: #fff;
+  }
+  .accordion-style .btn-link:after {
+    background: #fff;
+    border: none;
+    border-radius: 3px;
+    content: "-";
+    left: 16px;
+    right: inherit;
+    font-size: 20px;
+    font-weight: 600;
+    height: 26px;
+    line-height: 26px;
+    transform: none;
+    width: 26px;
+    top: 15px;
+    position: absolute;
+    color: #FFBDEB;
+    text-align: center;
+  }
+  .accordion-style .card-body {
+    padding: 20px;
+    border-top: none;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-left: 1px solid #FFBDEB;
+    border-right: 1px solid #FFBDEB;
+    border-bottom: 1px solid #FFBDEB;
+  }
+  @media screen and (max-width: 767px) {
+    .accordion-style .btn-link {
+      padding: 15px 40px 15px 55px;
+    }
+  }
+  @media screen and (max-width: 575px) {
+    .accordion-style .btn-link {
+      padding: 15px 20px 15px 55px;
+    }
+  }
+  .card-style1 {
+    box-shadow: 0px 0px 10px 0px rgb(89 75 128 / 9%);
+  }
+  .border-0 {
+    border: 0 !important;
+  }
+  .card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+  }
+  
+  .main-qna {
+    padding: 120px 0;
+    overflow: hidden;
+    background: #fff;
+  }
+  .mb-2-3,
+  .my-2-3 {
+    margin-bottom: 2.3rem;
+  }
+  
+  .section-title {
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    position: relative;
+    display: inline-block;
+  }
+  .text-test {
+    color: #FF007F !important;
+  }
+  
+  
+  /*testimonials      */
+  
+    
+    
+    /* Slideshow container */
+  .slideshow-container {
+    position: relative;
+    
+    
+  }
+  
+  .main-komen {
+      color: white;
+  }
+  
+  /* Slides */
+  .mySlides {
+    display: none;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  
+  .dot-container {
+    text-align: center;
+    padding: 20px;
+   
+  }
+  
+  
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    transition: 0.9s;
+   
+  }
+  
+  
+  .active, .dot:hover {
+    background-color: #ff66cc;
+  }
+  
+  .main-testimonial body {
+              margin: 0;
+              padding: 0;
+              height: 100%;
+              width: 100%;
+              font-family: 'Cormorant', serif;
+              background-color: #fff;
+          }
+  
+        
+  
+          .main-testimonial p {
+              font-size: 20px;
+              line-height: 33px !important;
+              color: #fff;
+  
+          }
+  
+          .small {
+              letter-spacing: 0.5px !important;
+          }
+  
+          .card-1 {
+              box-shadow: 0px 5px 16px rgba(233, 30, 99, 0.5);
+              transition: 0.8s;
+              margin: 0 auto;
+              box-sizing: border-box;
+              overflow: hidden;
+              border-radius: 7px !important;
+  
+          }
+  
+          .card-header,
+          .card-footer {
+              border-radius: 7px !important;
+          }
+  
+          .card-1:after {
+              position: absolute;
+              top: 0;
+              left: -50%;
+              width: 100%;
+              z-index: 9999;
+              height: 100%;
+              pointer-events: none;
+          }
+  
+          .card-title img{
+              z-index: 99999 !important;
+          }
+  
+                  .card-1 .layer {
+              position: absolute;
+              top: calc(100% - 5px);
+              width: 100%;
+              height: 100%;
+              background: linear-gradient(#fce4ec , #FFBDEB);
+              left: 0;
+              z-index: 1;
+              transition: 0.5s;
+          }
+          .card-1:hover {
+              box-shadow: -5px 50px 100px rgba(233, 30, 99, 0.5);
+          }
+  
+  
+          .card-1:hover hr {
+              background-color: #fff;
+  
+          }
+  
+          .card-1:hover h4   {
+              font-weight: 600;
+          }
+          .card-1:hover p   {
+              font-weight: 600;
+          }
+          .card-1:hover small   {
+              font-weight: 600;
+          }
+          
+          .card-1:hover .layer {
+              top: 0;
+          }
+  
+          .card-1 .content {
+              position: relative;
+              z-index: 2;
+          }
+  
+          .card-1 .content .img-1 {
+              width: 100px;
+              height: 100px;
+              margin: 0 auto;
+              border-radius: 50%;
+              overflow: hidden;
+              border: 5px solid white !important;
+  
+          }
+  
+          .card-1 h4 {
+              color: #fff;
+              font-weight: 500;
+          }
+  
+          .main-testimonial hr {
+              background-color: rgb(255, 128, 171);
+              
+              transition: 1s;
+          }
+  
+         
+          .bold {
+              font-weight: 500;
+          }
+  
+          #quotes{
+              opacity: 0.2;
+              filter: alpha(opacity=40);
+             
+          }
+  
+  
+          @media (max-width: 479px) {
+              p {
+                  padding: 0 !important;
+              }
+  
+              .img-1{
+                  margin-right: 0 !important;
+              }
+  
+          }
+  
+  /*untuk kepercayaan*/
+  .main-kepercayaan {
+    background-image: url("gambar/kepercayann.jpeg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  
+  .glass-text {
+    background: rgba(255, 255, 255, 0.3); /* Latar belakang putih semi-transparan */
+    border-radius: 10px; /* Sudut membulat */
+    padding: 15px; /* Jarak di dalam efek kaca */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+    color: #fff; /* Warna teks untuk keterbacaan */
+    height: auto; /* Membuat tinggi menyesuaikan dengan konten */
+    backdrop-filter: blur(15px); /* Menambahkan efek blur yang lebih kuat */
+  }
+  
+  /* contact us*/
+  
+  .map-container-2{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+  }
+  .map-container-2 iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+  }
+  
+  /* Warna tombol saat normal */
+  .btn.btn-outline-white {
+      background-color: #ff6ec7; /* Warna latar belakang biru */
+      color: white; /* Warna teks putih */
+      border-color: #E0FFFF; /* Warna border biru gradasi */
+  }
+  
+  .main-buttoncontact {
+     text-decoration: none;
+     color: #FFF;
+  }
+  .main-buttoncontact:hover {
+     text-decoration: none;
+     color: #000;
+     
+     
+  }
+  
+   /* footer*/
+    .main-quicklinks a {
+        text-decoration : none;
+        color: #fff;
+    }
+    .main-quicklinks a:hover {
+        color : #000;
+        text-decoration: none;
+    }
+    
+    .main-powered div span{
+        color: #000;
+    }
+    
+    /* Hover effect for all buttons */
+  .btn:hover {
+    background-color: white;
+    color: #4CAF50; /* Change text color on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow */
+    transform: scale(1.1); /* Slightly increase size */
+  }
+  
+  /* WhatsApp button specific styling */
+  .btn-whatsapp {
+    background-color: #25D366;
+    color: white;
+  }
+  
+  .btn-whatsapp:hover {
+    background-color: #128C7E;
+    color: white;
+  }
+  
+  /* Instagram button specific styling */
+  .btn-instagram {
+    background-color: ;
+    color: ;
+  }
+  
+  .btn-instagram:hover {
+    background-color: #E4405F;
+    color: white;
+  }
+  
+  /* Google button specific styling */
+  .btn-google {
+    background-color: ;
+    color: ;
+  }
+  
+  .btn-google:hover {
+    background-color: #4666ff;
+    color: white;
+  }
